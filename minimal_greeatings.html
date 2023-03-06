@@ -32,7 +32,7 @@
 
            
         .greet{
-            font-size: 3em;
+            font-size: 4em;
         }
 
         .date {
@@ -141,15 +141,26 @@ function dispalyGreetings(today){
     }
     
     
-     function twelveHour(hour) {
+      <!--function with 12h--> 
+    /*function twelveHour(hour) {
         if (hour > 12) {
             return hour -= 12
         } else if (hour === 0) {
-            return hour = 12;
+            return hour = 0;
+        } else {
+            return hour
+        } 
+    */
+    
+     <!--function with 24h-->
+     function twentyfourHour(hour) {
+        if (hour > 12) {
+            return hour -= 0
+        } else if (hour === 0) {
+            return hour = 0;
         } else {
             return hour
         }
-
    
     }
     function padZeros(num) {
